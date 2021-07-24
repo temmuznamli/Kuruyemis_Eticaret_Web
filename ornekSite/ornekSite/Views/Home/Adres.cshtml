@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Adres";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div id="sidebar" class="span3">
+        <div class="well well-small">
+            <ul class="nav nav-list">
+                @Html.Action("_CategoryList", "Category")
+                <li style="border:0"> &nbsp;</li>
+                @Html.Action("Summary", "Cart")
+            </ul>
+        </div>
+
+
+        @Html.Action("_FeaturedProductList", "Home")
+
+    </div>
+    <div class="span9">
+        <ul class="breadcrumb">
+            <li><a href="/Home/Index">ANASAYFA</a> <span class="divider">/</span></li>
+            
+            <li class="active">Adres</li>
+        </ul>
+        <div class="well well-small">
+            <h4>Adres: 15 Mayıs, Gazi Mustafa Kemal Blv. 94/A, 20010 Merkezefendi/Denizli</h4>
+            <h4>Telefon: 0 (544) 906 55 45</h4>
+            <hr class="softn clr">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2651.861502592314!2d29.084999939999875!3d37.77568170282827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c73fae89b99a29%3A0xb3d167dacf47b940!2zVHXEn2JhIEt1cnV5ZW1pxZ8gLyBEZW5pemxpIDEgxZ51YmU!5e0!3m2!1str!2str!4v1626871608871!5m2!1str!2str" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+
+        </div>
+    </div>
+</div>

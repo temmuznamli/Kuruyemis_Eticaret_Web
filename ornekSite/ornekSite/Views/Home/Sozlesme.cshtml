@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "Sozlesme";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div id="sidebar" class="span3">
+        <div class="well well-small">
+            <ul class="nav nav-list">
+                @Html.Action("_CategoryList", "Category")
+                <li style="border:0"> &nbsp;</li>
+                @Html.Action("Summary", "Cart")
+            </ul>
+        </div>
+
+
+        @Html.Action("_FeaturedProductList", "Home")
+
+    </div>
+    <div class="box col-12">
+        <div class="row text-description">
+            <h1>&nbsp;</h1>
+            <p>&nbsp;</p>
+            <h1><span>Satış Şözleşmesi</span></h1>
+            <p>&nbsp;</p>
+            <p><span>MADDE 1- TARAFLAR</span></p>
+            <p>&nbsp;</p>
+            <p><span>1.1- SATICI:</span></p>
+            <p>&nbsp;</p>
+            <p><span>Ünvanı : TN Kuruyemis Anonim Şirketi</span></p>
+            <p><span>Adresi : 15 Mayıs, Gazi Mustafa Kemal Blv. 94/A, 20010 Merkezefendi/Denizli</span></p>
+            <p><span>Telefon :0 5449065545</span></p>
+            <p><span>E-mail:&nbsp;temmuznamli@gmail.com</span></p>
+            <p>&nbsp;</p>
+            <p><span>1.2- ALICI:</span></p>
+            <p>&nbsp;</p>
+            <p><span>Adı/Soyadı/Ünvanı : {TESLIMATALICI}</span></p>
+            <p><span>Adresi:{TESLIMATADRES}</span></p>
+            <p><span>Telefon:{TESLIMATTELEFON}</span></p>
+            <p><span>E-mail:{TESLIMATEPOSTA}</span></p>
+            <p>&nbsp;</p>
+            <p><span>MADDE 2- KONU</span></p>
+            <p>&nbsp;</p>
+            <p><span>İşbu sözleşmenin konusu, ALICI'nın SATICI'ya ait {FIRMAUNVAN} internet sitesinden elektronik ortamda siparişini yaptığı aşağıda nitelikleri ve satış fiyatı belirtilen ürünün satışı ve teslimi ile ilgili olarak 4077 sayılı Tüketicilerin Korunması Hakkındaki Kanun ve Mesafeli Sözleşmeleri Uygulama Esas ve Usulleri Hakkında Yönetmelik hükümleri gereğince tarafların hak ve yükümlülüklerinin saptanmasıdır.</span></p>
+            <p>&nbsp;</p>
+            <p><span>MADDE 3- SÖZLEŞME KONUSU ÜRÜN</span></p>
+            <p>&nbsp;</p>
+            <p><span>Tarih : {TARIH}</span></p>
+            <p>&nbsp;</p>
+            <p><span>{URUNKALEMLERI} Ürün Adı Adet Toplam Ürün Tutarı Ürünlerin cinsi ve türü,miktarı,marka/modeli rengi satış bedeli yukarıda ve sitede belirtildiği gibidir.</span></p>
+            <p>&nbsp;</p>
+            <p><span>Ödeme şekli: {ODEMETIPI}</span></p>
+            <p>&nbsp;</p>
+            <p><span>Teslimat adresi: {TESLIMATADRES}</span></p>
+            <p>&nbsp;</p>
+            <p><span>{ODEMETIPI} ile Toplam {ODENENTUTAR}</span></p>
+            <p>&nbsp;</p>
+            <p><span>MADDE 4- GENEL HÜKÜMLER</span></p>
+            <p><span>4.1- ALICI, Tn Kuruyemis Anonim Şirketi internet sitesinde sözleşme konusu ürünün temel nitelikleri, satış fiyatı ve ödeme şekli ile teslimata ilişkin ön bilgileri okuyup bilgi sahibi olduğunu ve elektronik ortamda gerekli teyidi verdiğini beyan eder.</span></p>
+            <p>&nbsp;</p>
+            <p><span>4.2- Sözleşme konusu ürün, yasal 3 günlük süreyi aşmamak koşulu ile her bir ürün için ALICI'nın yerleşim yerinin uzaklığına bağlı olarak internet sitesinde ön bilgiler içinde açıklanan süre içinde ALICI veya gösterdiği adresteki kişi/kuruluşa teslim edilir.</span></p>
+            <p>&nbsp;</p>
+            <p><span>4.3- Sözleşme konusu ürün, ALICI'dan başka bir kişi/kuruluşa teslim edilecek ise, teslim edilecek kişi/kuruluşun teslimatı kabul etmemesininden SATICI sorumlu tutulamaz.</span></p>
+            <p>&nbsp;</p>
+            <p><span>4.4- SATICI, sözleşme konusu ürünün sağlam, eksiksiz, siparişte belirtilen niteliklere uygun ve varsa garanti belgeleri ve kullanım klavuzları ile teslim edilmesinden sorumludur.</span></p>
+            <p>&nbsp;</p>
+            <p><span>4.5- Sözleşme konusu ürünün teslimatı için işbu sözleşmenin imzalı nüshasının SATICI'ya ulaştırılmış olması ve bedelinin ALICI'nın tercih ettiği ödeme şekli ile ödenmiş olması şarttır. Herhangi bir nedenle ürün bedeli ödenmez veya banka kayıtlarında iptal edilir ise, SATICI ürünün teslimi yükümlülüğünden kurtulmuş kabul edilir.</span></p>
+            <p>&nbsp;</p>
+            <p><span>4.6- Ürünün tesliminden sonra ALICI'ya ait kredi kartının ALICI'nın kusurundan kaynaklanmayan bir şekilde yetkisiz kişilerce haksız veya hukuka aykırı olarak kullanılması nedeni ile ilgili banka veya finans kuruluşun ürün bedelini SATICI'ya ödememesi halinde, ALICI'nın kendisine teslim edilmiş olması kaydıyla ürünün 3 gün içinde SATICI'ya gönderilmesi zorunludur. Bu takdirde nakliye giderleri ALICI'ya aittir.</span></p>
+            <p>&nbsp;</p>
+            <p><span>4.7- SATICI mücbir sebepler veya nakliyeyi engelleyen hava muhalefeti, ulaşımın kesilmesi gibi olağanüstü durumlar nedeni ile sözleşme konusu ürünü süresi içinde teslim edemez ise, durumu ALICI'ya bildirmekle yükümlüdür. Bu takdirde ALICI siparişin iptal edilmesini, sözleşme konusu ürünün varsa emsali ile değiştirilmesini, ve/veya teslimat süresinin engelleyici durumun ortadan kalkmasına kadar ertelenmesi haklarından birini kullanabilir. ALICI'nın siparişi iptal etmesi halinde ödediği tutar 10 gün içinde kendisine nakten ve defaten ödenir.</span></p>
+            <p>&nbsp;</p>
+            <p><span>MADDE 5- CAYMA HAKKI ALICI, sözleşme konusu ürürünün kendisine veya gösterdiği adresteki kişi/kuruluşa tesliminden itibaren 7 gün içinde cayma hakkına sahiptir. Cayma hakkının kullanılması için bu süre içinde SATICI'ya faks, email veya telefon ile bildirimde bulunulması ve ürünün 6. madde hükümleri çercevesinde kullanılmamış olması şarttır. Bu hakkın kullanılması halinde, 3. kişiye veya ALICI'ya teslim edilen ürünün SATICI'ya gönderildiğine ilişkin kargo teslim tutanağı örneği ile fatura aslının iadesi zorunludur. Bu belgelerin ulaşmasını takip eden 7 gün içinde ürün bedeli ALICI'ya iade edilir. Fatura aslı gönderilmez ise KDV ve varsa sair yasal yükümlülükler iade edilemez. Cayma hakkı nedeni ile iade edilen ürünün kargo bedeli SATICI tarafından karşılanır. SATICI, ALICI'nın sipariş verdiği teslimat noktasına, sipariş verilen ürünlerin teslimatının zor yapılacağı, sorunlu yapılacağı, geç yapılacağını tahmin veya şüphe ettiğinde bunu ALICI'ya bildirerek satış işleminden cayma hakkına sahiptir. Bunun gibi kargo teslimat süresi uzun sürecek veya teslimat adresine teslimat yapılamayacak durumlarda, ALICI'nın maddi ve sıhhi olarak korunması ön planda tutulmuştur. SATICI cayma hakkını kullandığında, söz konusu satıştan elde ettiği geliri havale veya kredi kartı satış iptali/iadesi olarak ALICI'ya geri ödemekle yükümlüdür. Geri ödemenin/iadenin hangi şekilde olacağına SATICI tarafından karar verilir. Geri ödeme/iade şekilleri; havale veya kredi kartına iade şeklindedir.</span></p>
+            <p>&nbsp;</p>
+            <p><span>MADDE 6- CAYMA HAKKI KULLANILAMAYACAK ÜRÜNLER Niteliği itibarıyla iade edilemeyecek ürünler, tek kullanımlık ürünler, kopyalanabilir yazılım ve programlar, hızlı bozulan veya son kullanım tarihi geçen ürünler için cayma hakkı kullanılamaz. Aşağıdaki ürünlerde cayma hakkının kullanılması, ürünün ambalajının açılmamış, bozulmamış ve ürünün kullanılmamış olması şartına bağlıdır. - Süt ve Manda Kaymakları ve kaymak içeren ürünler</span></p>
+            <p>&nbsp;</p>
+            <p><span>MADDE 7- YETKİLİ MAHKEME İşbu sözleşmenin uygulanmasında, Sanayi ve Ticaret Bakanlığınca ilan edilen değere kadar Tüketici Hakem Heyetleri ile ALICI'nın veya SATICI'nın yerleşim yerindeki Tüketici Mahkemeleri yetkilidir. Siparişin gerçekleşmesi durumunda ALICI işbu sözleşmenin tüm koşullarını kabul etmiş sayılır.</span></p>
+            <p>&nbsp;</p>
+            <p><span>SATICI:</span></p>
+            <p><span>TN Kuruyemis Anonim Şirketi</span></p>
+            <p>&nbsp;</p>
+            <p><span>ALICI:</span></p>
+            <p><span>{TESLIMATALICI}</span></p>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "BizKimiz";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div id="sidebar" class="span3">
+        <div class="well well-small">
+            <ul class="nav nav-list">
+                @Html.Action("_CategoryList", "Category")
+                <li style="border:0"> &nbsp;</li>
+                @Html.Action("Summary", "Cart")
+            </ul>
+        </div>
+
+
+        @Html.Action("_FeaturedProductList", "Home")
+
+    </div>
+    <div class="span9">
+        <ul class="breadcrumb">
+            <li><a href="/Home/Index">ANASAYFA</a> <span class="divider">/</span></li>
+
+            <li class="active">BizKimiz</li>
+        </ul>
+        <div class="well well-small">
+            <h4>MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ YAZ STAJI PROJE ÖDEVİME HOŞ GELDİNİZ</h4>
+            <h4>SAYGILARIMLA</h4>
+            <hr class="softn clr">
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
